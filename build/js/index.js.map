@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":["document","addEventListener","App","console","log"],"mappings":"AAAAA,SAAAC,iBAAA,mBAAA,KACAC,QAGA,MAAAA,IAAA,KACAC,QAAAC,IAAA","file":"index.js","sourcesContent":["document.addEventListener(\"DOMContentLoaded\", () => {\r\n    App();\r\n});\r\n\r\nconst App = () => {\r\n    console.log(\"Hello world\");\r\n};\r\n"]}
