@@ -28,11 +28,10 @@ p {
     background-color: $White;
     border-radius: 2rem;
     height: auto;
-    // height: 100vh;
     padding: 3rem;
 
     @include tablet {
-        @include grid(2, 2rem);
+        @include grid(2, 4rem);
         height: auto;
         margin: 10rem auto;
     }
