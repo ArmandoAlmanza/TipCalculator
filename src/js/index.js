@@ -3,5 +3,15 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const App = () => {
-    console.log("Hello world");
+    tip();
 };
+
+const tip = () => {
+   const btns = document.querySelectorAll(".btn__tip");
+   btns.forEach(btn => {
+       btn.addEventListener('click', e =>{
+           e.preventDefault();
+           console.log("Click");
+       })
+   })
+}

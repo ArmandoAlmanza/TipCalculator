@@ -2,9 +2,37 @@
     text-align: center;
 }
 
-.d-none{
+.d-none {
     display: none;
 }
-.d-block{
+.d-block {
     display: block;
+}
+.btn {
+    display: block;
+    padding: 0.7rem 1rem;
+    transition: all 0.3s ease-in-out;
+    font-size: 2.5rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.btn__tip {
+    background-color: $Dark-cyan;
+    color: $White;
+    &:hover {
+        background-color: $blue;
+        color: $Dark-cyan;
+    }
+}
+
+.correct{
+    border: 1px solid $blue;
+}
+.incorrect{
+    border: 1px solid rgb(248, 113, 59);
 }

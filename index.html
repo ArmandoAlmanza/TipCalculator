@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- Styles -->
         <link rel="stylesheet" href="./build/css/app.css" />
-        <title>Challenge 1</title>
+        <title>Tip Calculator</title>
     </head>
     <body>
         <header class="logo">
@@ -25,14 +25,29 @@
                             placeholder="00.00"
                         />
                         <input
-                        type="image"
-                        src="./build/img/icon-dollar.svg"
-                        alt="dollar icon"
-                        class="data__icon"
-                    />
+                            type="image"
+                            src="./build/img/icon-dollar.svg"
+                            alt="dollar icon"
+                            class="data__icon"
+                        />
                     </div>
                 </div>
                 <!-- Tip section -->
+                <div class="input__group">
+                    <label>Select Tip</label>
+                    <div class="tip__btns">
+                        <button class="btn btn__tip">5%</button>
+                        <button class="btn btn__tip">10%</button>
+                        <button class="btn btn__tip">15%</button>
+                        <button class="btn btn__tip">25%</button>
+                        <button class="btn btn__tip">5%</button>
+                        <input
+                            type="number"
+                            class="custom"
+                            placeholder="Custom"
+                        />
+                    </div>
+                </div>
             </form>
         </main>
         <script src="./build/js/index.js"></script>
