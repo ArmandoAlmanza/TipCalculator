@@ -3,10 +3,16 @@
 	position: relative;
 	outline: none;
 	top: 1.5rem;
+	@include tablet{
+		width: 95%;
+	}
 }
 .data__icon{
 	position: relative;
 	bottom: 2.5rem;
 	width: 3.4rem;
 	background: transparent;
+}
+.icon{
+	width: 3.8rem;
 }

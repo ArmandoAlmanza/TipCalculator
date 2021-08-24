@@ -28,11 +28,14 @@
         background-color: $blue;
         color: $Dark-cyan;
     }
+    @include tablet {
+        width: 80%;
+    }
 }
 
-.correct{
+.correct {
     border: 1px solid $blue;
 }
-.incorrect{
+.incorrect {
     border: 1px solid rgb(248, 113, 59);
 }

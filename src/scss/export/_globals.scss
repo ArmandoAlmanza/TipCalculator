@@ -27,11 +27,12 @@ p {
     margin: 0 auto;
     background-color: $White;
     border-radius: 2rem;
+    // height: auto;
     height: 100vh;
     padding: 3rem;
-    display: flex;
-    justify-content: space-between;
-    @include tablet{
+
+    @include tablet {
+        @include grid(2, 2rem);
         height: auto;
         margin: 10rem auto;
     }
@@ -41,17 +42,17 @@ img {
     max-width: 100%;
 }
 
-input{
+input {
     font-size: 2.4rem;
     background-color: $Light-grayish-cyan;
     display: block;
-    padding: .7rem 1rem;
+    padding: 0.7rem 1rem;
     border: none;
     border-radius: 5px;
     font-weight: 700;
     color: $Dark-cyan;
 }
-label{
+label {
     font-size: 2rem;
     color: $Dark-grayish-cyan;
     font-weight: 500;

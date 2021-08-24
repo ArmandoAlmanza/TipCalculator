@@ -1,9 +1,20 @@
-.tip__btns{
-	@include grid(2, 2rem);
-	padding: 1rem;
+.tip__btns {
+    @include grid(2, 2rem);
+    padding: 1rem;
+    @include tablet {
+        @include grid(3, 1rem);
+    }
 }
 
-.custom{
-	width: 100%;
-	text-align: right;
+.custom {
+    width: 100%;
+    text-align: right;
+    outline: none;
+
+    &:focus {
+        border: 1px solid $blue;
+    }
+    @include tablet {
+        width: 80%;
+    }
 }
