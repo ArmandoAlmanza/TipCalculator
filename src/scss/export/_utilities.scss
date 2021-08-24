@@ -29,10 +29,20 @@
         color: $Dark-cyan;
     }
     @include tablet {
-        width: 80%;
+        width: 100%;
     }
 }
-
+.btn__total{
+    color: $Dark-cyan;
+    background-color: $blue;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 3rem;
+    transition: all .3s ease-in-out;
+    &:hover{
+        background-color: $Light-grayish-cyan;
+    }
+}
 .correct {
     border: 1px solid $blue;
 }

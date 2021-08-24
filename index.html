@@ -13,66 +13,86 @@
             <img src="./build/img/logo.svg" alt="logo" />
         </header>
         <main class="app container">
-            <form action="" class="form">
-                <!-- Bills section -->
-                <div class="input__group">
-                    <label>Bill</label>
-                    <div class="search">
-                        <input
-                            class="data"
-                            type="number"
-                            name="bill"
-                            placeholder="00.00"
-                            id="bill"
-                        />
-                        <input
-                            type="image"
-                            src="./build/img/icon-dollar.svg"
-                            alt="dollar icon"
-                            class="data__icon"
-                        />
+            <div class="data__entry">
+                <form action="" class="form">
+                    <!-- Bills section -->
+                    <div class="input__group">
+                        <label>Bill</label>
+                        <div class="search">
+                            <input
+                                class="data"
+                                type="number"
+                                name="bill"
+                                placeholder="00.00"
+                                id="bill"
+                            />
+                            <input
+                                type="image"
+                                src="./build/img/icon-dollar.svg"
+                                alt="dollar icon"
+                                class="data__icon"
+                            />
+                        </div>
                     </div>
-                </div>
-                <!-- Tip section -->
-                <div class="input__group">
-                    <label>Select Tip</label>
-                    <div class="tip__btns">
-                        <button class="btn btn__tip">5%</button>
-                        <button class="btn btn__tip">10%</button>
-                        <button class="btn btn__tip">15%</button>
-                        <button class="btn btn__tip">25%</button>
-                        <button class="btn btn__tip">5%</button>
-                        <input
-                            type="number"
-                            class="custom"
-                            placeholder="Custom"
-                        />
+                    <!-- Tip section -->
+                    <div class="input__group">
+                        <label>Select Tip %</label>
+                        <div class="tip__btns">
+                            <button class="btn btn__tip">5%</button>
+                            <button class="btn btn__tip">10%</button>
+                            <button class="btn btn__tip">15%</button>
+                            <button class="btn btn__tip">25%</button>
+                            <button class="btn btn__tip">5%</button>
+                            <input
+                                type="number"
+                                class="custom"
+                                placeholder="Custom"
+                            />
+                        </div>
                     </div>
-                </div>
-                <!-- People section -->
-                <div class="input__group">
-                    <label>Number of People</label>
-                    <div class="search">
-                        <input
-                            class="data"
-                            type="number"
-                            name="bill"
-                            id="people"
-                            placeholder="00.00"
-                        />
-                        <input
-                            type="image"
-                            src="./build/img/icon-person.svg"
-                            alt="dollar icon"
-                            class="data__icon icon"
-                        />
+                    <!-- People section -->
+                    <div class="input__group">
+                        <label>Number of People</label>
+                        <div class="search">
+                            <input
+                                class="data"
+                                type="number"
+                                name="bill"
+                                id="people"
+                                placeholder="00.00"
+                            />
+                            <input
+                                type="image"
+                                src="./build/img/icon-person.svg"
+                                alt="dollar icon"
+                                class="data__icon icon"
+                            />
+                        </div>
                     </div>
-                </div>
-                <!-- Result section -->
-                <div class="input__group">
-                    
-                </div>
-            </form>
+                </form>
+            </div>
+            <div class="data__output">
+                <form action="" class="form">
+                    <!-- Result section -->
+                    <div class="input__group">
+                        <div class="results">
+                            <!-- Amount -->
+                            <div class="result__data">
+                                <h4>Tip Amount</h4> <br />
+                                <small>/ person</small>
+                            </div>
+                            <p class="dollar">$ <span id="amount">0.00</span></p>
+                            <!-- Total -->
+                            <div class="result__data">
+                                <h4>Total</h4> <br />
+                                <small>/ person</small>
+                            </div>
+                            <p class="dollar">$ <span id="total">0.00</span></p>
+                            <button class="btn btn__total">Reset</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </main>
         <script src="./build/js/index.js"></script>
     </body>

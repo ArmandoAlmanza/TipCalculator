@@ -1,0 +1,25 @@
+.results{
+	@include grid(2, 2rem);
+	align-items: center;
+	background-color: $Dark-cyan;
+	padding: 3rem;
+	border-radius: 15px;
+
+}
+.result__data{
+	color: $White;
+	h4{
+		margin: 0;
+		margin-top: 2rem;
+	}
+	small{
+		color: $Dark-grayish-cyan;
+	}
+}
+.dollar{
+	color: $blue;
+	font-size: 3rem;
+	@include tablet{
+	font-size: 4rem;
+	}
+}

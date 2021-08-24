@@ -23,12 +23,12 @@ p {
 }
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
     background-color: $White;
     border-radius: 2rem;
-    // height: auto;
-    height: 100vh;
+    height: auto;
+    // height: 100vh;
     padding: 3rem;
 
     @include tablet {

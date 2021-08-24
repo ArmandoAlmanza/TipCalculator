@@ -15,3 +15,7 @@ const tip = () => {
        })
    })
 }
+
+const result = () =>{
+    
+}
