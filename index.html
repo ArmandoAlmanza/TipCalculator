@@ -37,11 +37,11 @@
                     <div class="input__group">
                         <label>Select Tip %</label>
                         <div class="tip__btns">
-                            <button class="btn btn__tip">5%</button>
-                            <button class="btn btn__tip">10%</button>
-                            <button class="btn btn__tip">15%</button>
-                            <button class="btn btn__tip">25%</button>
-                            <button class="btn btn__tip">5%</button>
+                            <button class="btn btn__tip" value="5">5%</button>
+                            <button class="btn btn__tip" value="10">10%</button>
+                            <button class="btn btn__tip" value="15">15%</button>
+                            <button class="btn btn__tip" value="25">25%</button>
+                            <button class="btn btn__tip" value="50">50%</button>
                             <input
                                 type="number"
                                 class="custom"
@@ -76,17 +76,21 @@
                         <div class="results">
                             <!-- Amount -->
                             <div class="result__data">
-                                <h4>Tip Amount</h4> <br />
+                                <h4>Tip Amount</h4>
+                                <br />
                                 <small>/ person</small>
                             </div>
-                            <p class="dollar">$ <span id="amount">0.00</span></p>
+                            <p class="dollar">
+                                $ <span id="amount">0.00</span>
+                            </p>
                             <!-- Total -->
                             <div class="result__data">
-                                <h4>Total</h4> <br />
+                                <h4>Total</h4>
+                                <br />
                                 <small>/ person</small>
                             </div>
                             <p class="dollar">$ <span id="total">0.00</span></p>
-                            <button class="btn btn__total">Reset</button>
+                            <button class="btn btn__total" id="reset">Reset</button>
                         </div>
                     </div>
                 </form>

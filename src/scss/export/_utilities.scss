@@ -32,19 +32,18 @@
         width: 100%;
     }
 }
-.btn__total{
+.btn__total {
     color: $Dark-cyan;
     background-color: $blue;
     grid-column-start: 1;
     grid-column-end: 3;
     margin-top: 1rem;
-    transition: all .3s ease-in-out;
-    &:hover{
+    transition: all 0.3s ease-in-out;
+    &:hover {
         background-color: $Light-grayish-cyan;
     }
-    @include tablet{
+    @include tablet {
         margin-top: 3rem;
-
     }
 }
 .correct {
@@ -52,4 +51,8 @@
 }
 .incorrect {
     border: 1px solid rgb(248, 113, 59);
+}
+.active {
+    background-color: $blue;
+    color: $Dark-cyan;
 }
