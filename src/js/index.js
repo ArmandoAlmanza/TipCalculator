@@ -23,16 +23,33 @@ const tip = () => {
             // }
         });
     });
+    document.getElementById("custom__tip").addEventListener("input", (e) => {
+        porcetange = Number(e.target.value);
+    });
 };
 
 const bill = () => {
     document.getElementById("bill").addEventListener("input", (e) => {
-        dollars = Number(e.target.value.trim());
+        if (e.target.value === "") {
+            document.getElementById('bill').classList.add('error');
+            document.getElementById('bill').classList.remove('correct');
+        } else {
+            document.getElementById('bill').classList.remove('error');
+            document.getElementById('bill').classList.add('correct');
+            dollars = Number(e.target.value.trim());
+        }
     });
 };
 const people = () => {
     document.getElementById("people").addEventListener("input", (e) => {
-        number_people = Number(e.target.value.trim());
+        if (e.target.value === "") {
+            document.getElementById('people').classList.add('error');
+            document.getElementById('people').classList.remove('correct');
+        } else {
+            document.getElementById('people').classList.remove('error');
+            document.getElementById('people').classList.add('correct');
+            number_people = Number(e.target.value.trim());
+        }
     });
     document.getElementById("people").addEventListener("blur", (e) => {
         result();
@@ -51,6 +68,7 @@ const result = () => {
 
         let amountPorcentage = (dollars / porcetange) * 100;
         let final = amountPorcentage.toFixed(2) / number_people;
+
         amount.innerText = amountPorcentage.toFixed(2);
         total.innerText = final.toFixed(2);
     }
