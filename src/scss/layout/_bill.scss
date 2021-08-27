@@ -18,3 +18,10 @@
 	width: 2.1rem;
 	bottom: 2rem;
 }
+.input__title{
+	display: flex;justify-content: space-between;
+	p{
+		margin: 0;
+		color: red;
+	}
+}
